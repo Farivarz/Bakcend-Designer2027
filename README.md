@@ -172,14 +172,16 @@ The skill uses progressive disclosure. `SKILL.md` stays short, and a reference t
 
 Two eval cases ship with the skill. One is a full Express and Prisma SaaS design on Coolify. The other is a Django request for the schema alone, which has to skip the components the project does not need.
 
+Check the plugin manifest at any time:
+
 ```bash
 claude plugin validate --strict .
 ```
 
-If you have the eval runner available:
+Run the eval cases, if the runner is enabled for your account (it is in early access):
 
 ```bash
-claude plugin eval skills/backend-designer/evals
+claude plugin eval . --eval-dir skills/backend-designer/evals
 ```
 
 ## Contributing
