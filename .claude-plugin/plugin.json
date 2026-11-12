@@ -1,0 +1,26 @@
+{
+  "name": "backend-designer",
+  "displayName": "Backend Designer",
+  "version": "1.0.0",
+  "description": "Reads an application's codebase and designs its whole backend - API map, database schema, cache, load limits, object storage, vector database, security and deploy - as separate rule files that Claude Code follows while it builds.",
+  "author": {
+    "name": "Farivarz",
+    "url": "https://github.com/Farivarz"
+  },
+  "homepage": "https://github.com/Farivarz/Bakcend-Designer2027",
+  "repository": "https://github.com/Farivarz/Bakcend-Designer2027",
+  "license": "MIT",
+  "keywords": [
+    "backend",
+    "architecture",
+    "database",
+    "postgresql",
+    "redis",
+    "vector-database",
+    "object-storage",
+    "docker",
+    "coolify",
+    "devops"
+  ],
+  "skills": ["./skills/"]
+}

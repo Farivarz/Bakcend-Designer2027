@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Example decision matrix produced by Backend Designer">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C"/>
+      <stop offset="1" stop-color="#101A2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="440" fill="url(#dbg)"/>
+  <g font-family="system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="56" y="48" font-size="12" font-weight="600" letter-spacing="3.2" fill="#7DD3FC">00-OVERVIEW.MD - DECISION MATRIX</text>
+    <text x="56" y="76" font-size="15" fill="#93A8C6">Infrastructure is added because the code asks for it, and what is skipped is written down with the reason.</text>
+    <g font-size="11" font-weight="700" letter-spacing="1.4" fill="#5F7596">
+      <text x="76" y="118">COMPONENT</text>
+      <text x="300" y="118">NEEDED</text>
+      <text x="432" y="118">DECISION</text>
+      <text x="720" y="118">WHY</text>
+    </g>
+    <path d="M56 130H1144" stroke="#2A3C5E" stroke-width="1"/>
+  </g>
+  <g>
+    <rect x="56" y="140" width="1088" height="44" rx="8" fill="#131E35"/>
+    <text x="76" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E7EFFA">Database</text>
+    <rect x="300" y="152" width="50" height="21" rx="10.5" fill="#0F2A23" stroke="#2F7A5E"/>
+    <text x="325" y="167" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#6EE7B7">yes</text>
+    <text x="432" y="170" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#CBD9EC">PostgreSQL 16</text>
+    <text x="720" y="170" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12.5" fill="#8498B7">relational core with foreign keys across six entities</text>
+  </g>
+  <g>
+    <rect x="56" y="188" width="1088" height="44" rx="8" fill="#0E1728"/>
+    <text x="76" y="218" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E7EFFA">Cache / Redis</text>
+    <rect x="300" y="200" width="50" height="21" rx="10.5" fill="#0F2A23" stroke="#2F7A5E"/>
+    <text x="325" y="215" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#6EE7B7">yes</text>
+    <text x="432" y="218" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#CBD9EC">one instance, AOF everysec</text>
+    <text x="720" y="218" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12.5" fill="#8498B7">sessions, rate limits and a BullMQ queue all found in src/</text>
+  </g>
+  <g>
+    <rect x="56" y="236" width="1088" height="44" rx="8" fill="#131E35"/>
+    <text x="76" y="266" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E7EFFA">Object storage</text>
+    <rect x="300" y="248" width="50" height="21" rx="10.5" fill="#0F2A23" stroke="#2F7A5E"/>
+    <text x="325" y="263" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#6EE7B7">yes</text>
+    <text x="432" y="266" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#CBD9EC">S3-compatible, presigned PUT</text>
+    <text x="720" y="266" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12.5" fill="#8498B7">invoice PDF export writes files the app must serve back</text>
+  </g>
+  <g>
+    <rect x="56" y="284" width="1088" height="44" rx="8" fill="#0E1728"/>
+    <text x="76" y="314" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E7EFFA">Vector DB</text>
+    <rect x="300" y="296" width="90" height="21" rx="10.5" fill="#231C33" stroke="#5B4A86"/>
+    <text x="345" y="311" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#C4B5FD">pgvector</text>
+    <text x="432" y="314" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#CBD9EC">same Postgres, HNSW index</text>
+    <text x="720" y="314" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12.5" fill="#8498B7">40k vectors, far below the point a separate engine pays off</text>
+  </g>
+  <g>
+    <rect x="56" y="332" width="1088" height="44" rx="8" fill="#131E35"/>
+    <text x="76" y="362" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E7EFFA">Dedicated search</text>
+    <rect x="300" y="344" width="42" height="21" rx="10.5" fill="#1A2232" stroke="#3C4B66"/>
+    <text x="321" y="359" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#93A8C6">no</text>
+    <text x="432" y="362" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#CBD9EC">Postgres full-text + pg_trgm</text>
+    <text x="720" y="362" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12.5" fill="#8498B7">no term-search volume that would justify another service</text>
+  </g>
+  <g>
+    <rect x="56" y="380" width="1088" height="44" rx="8" fill="#0E1728"/>
+    <text x="76" y="410" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#E7EFFA">Read replicas</text>
+    <rect x="300" y="392" width="42" height="21" rx="10.5" fill="#1A2232" stroke="#3C4B66"/>
+    <text x="321" y="407" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="11" font-weight="700" fill="#93A8C6">no</text>
+    <text x="432" y="410" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#CBD9EC">single primary for now</text>
+    <text x="720" y="410" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12.5" fill="#8498B7">revisit when read-heavy endpoints pass 300 req/s</text>
+  </g>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="How Backend Designer works: profile the codebase, decide each concern, attach as rules">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C"/>
+      <stop offset="1" stop-color="#101A2E"/>
+    </linearGradient>
+    <pattern id="agrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1A2539" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#44608C"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="700" fill="url(#abg)"/>
+  <rect width="1200" height="700" fill="url(#agrid)" opacity="0.45"/>
+
+  <g font-family="system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="56" y="46" font-size="12" font-weight="600" letter-spacing="3.2" fill="#7DD3FC">HOW IT WORKS</text>
+
+    <g>
+      <rect x="56" y="70" width="330" height="128" rx="12" fill="#121D33" stroke="#263756"/>
+      <circle cx="84" cy="100" r="13" fill="#0E2A3F" stroke="#38BDF8"/>
+      <text x="84" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#7DD3FC">1</text>
+      <text x="108" y="105" font-size="16" font-weight="700" fill="#E8EFF9">Read the codebase</text>
+      <text x="80" y="134" font-size="13" fill="#95A9C6">Stack, ORM, entities, routes, auth,</text>
+      <text x="80" y="156" font-size="13" fill="#95A9C6">existing infra. Signals that decide if</text>
+      <text x="80" y="178" font-size="13" fill="#95A9C6">Redis, storage or vectors are needed.</text>
+    </g>
+
+    <g>
+      <rect x="431" y="70" width="330" height="128" rx="12" fill="#121D33" stroke="#263756"/>
+      <circle cx="459" cy="100" r="13" fill="#0E2A3F" stroke="#34D399"/>
+      <text x="459" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#6EE7B7">2</text>
+      <text x="483" y="105" font-size="16" font-weight="700" fill="#E8EFF9">Decide, then write</text>
+      <text x="455" y="134" font-size="13" fill="#95A9C6">One file per concern. Each one picks</text>
+      <text x="455" y="156" font-size="13" fill="#95A9C6">a single option and gives the reason.</text>
+      <text x="455" y="178" font-size="13" fill="#95A9C6">Skipped parts are recorded, not lost.</text>
+    </g>
+
+    <g>
+      <rect x="806" y="70" width="330" height="128" rx="12" fill="#121D33" stroke="#263756"/>
+      <circle cx="834" cy="100" r="13" fill="#2A1E3F" stroke="#A78BFA"/>
+      <text x="834" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#C4B5FD">3</text>
+      <text x="858" y="105" font-size="16" font-weight="700" fill="#E8EFF9">Attach as rules</text>
+      <text x="830" y="134" font-size="13" fill="#95A9C6">Written to .claude/rules/backend/ and</text>
+      <text x="830" y="156" font-size="13" fill="#95A9C6">scoped by path, so the right rules load</text>
+      <text x="830" y="178" font-size="13" fill="#95A9C6">for the files you are actually editing.</text>
+    </g>
+
+    <path d="M392 134H424" stroke="#44608C" stroke-width="2" fill="none"/>
+    <path d="M418 128L426 134L418 140z" fill="#44608C"/>
+    <path d="M767 134H799" stroke="#44608C" stroke-width="2" fill="none"/>
+    <path d="M793 128L801 134L793 140z" fill="#44608C"/>
+
+    <text x="56" y="252" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#8FA7C7">.claude/rules/backend/</text>
+    <text x="1144" y="252" text-anchor="end" font-size="12" fill="#64799A">one decision per file - nothing hidden in prose</text>
+    <path d="M56 266H1144" stroke="#223149" stroke-width="1"/>
+  </g>
+  <g>
+    <rect x="56" y="300" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="56" y="300" width="4" height="80" fill="#38BDF8"/>
+    <text x="82" y="332" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">00-overview.md</text>
+    <text x="82" y="356" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Stack, domain, decision matrix, non-negotiables</text>
+    <rect x="310" y="329" width="78" height="21" rx="10.5" fill="#13263B" stroke="#2D5B82"/>
+    <text x="349" y="344" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#86C8F0">always</text>
+  </g>
+  <g>
+    <rect x="428" y="300" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="428" y="300" width="4" height="80" fill="#60A5FA"/>
+    <text x="454" y="332" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">api-map.md</text>
+    <text x="454" y="356" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Endpoints, auth, error shape, pagination, idempotency</text>
+    <rect x="682" y="329" width="78" height="21" rx="10.5" fill="#13263B" stroke="#2D5B82"/>
+    <text x="721" y="344" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#86C8F0">always</text>
+  </g>
+  <g>
+    <rect x="800" y="300" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="800" y="300" width="4" height="80" fill="#34D399"/>
+    <text x="826" y="332" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">database-schema.md</text>
+    <text x="826" y="356" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Tables, FKs, indexes, migration safety rules</text>
+    <rect x="1054" y="329" width="78" height="21" rx="10.5" fill="#13263B" stroke="#2D5B82"/>
+    <text x="1093" y="344" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#86C8F0">always</text>
+  </g>
+  <g>
+    <rect x="56" y="396" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="56" y="396" width="4" height="80" fill="#F87171"/>
+    <text x="82" y="428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">security.md</text>
+    <text x="82" y="452" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Authn, authz, headers, secrets, audit log</text>
+    <rect x="310" y="425" width="78" height="21" rx="10.5" fill="#13263B" stroke="#2D5B82"/>
+    <text x="349" y="440" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#86C8F0">always</text>
+  </g>
+  <g>
+    <rect x="428" y="396" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="428" y="396" width="4" height="80" fill="#FBBF24"/>
+    <text x="454" y="428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">load-management.md</text>
+    <text x="454" y="452" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Rate limits, timeouts, retries, scaling model</text>
+    <rect x="682" y="425" width="78" height="21" rx="10.5" fill="#13263B" stroke="#2D5B82"/>
+    <text x="721" y="440" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#86C8F0">always</text>
+  </g>
+  <g>
+    <rect x="800" y="396" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="800" y="396" width="4" height="80" fill="#2DD4BF"/>
+    <text x="826" y="428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">deploy.md</text>
+    <text x="826" y="452" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Dockerfile, compose, Coolify, CI, backups</text>
+    <rect x="1054" y="425" width="78" height="21" rx="10.5" fill="#13263B" stroke="#2D5B82"/>
+    <text x="1093" y="440" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#86C8F0">always</text>
+  </g>
+  <g>
+    <rect x="56" y="492" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="56" y="492" width="4" height="80" fill="#FB7185"/>
+    <text x="82" y="524" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">cache-redis.md</text>
+    <text x="82" y="548" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Key naming, TTLs, queues, degraded behavior</text>
+    <rect x="310" y="521" width="78" height="21" rx="10.5" fill="#231C33" stroke="#4B3F6B"/>
+    <text x="349" y="536" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#B9A9E8">if needed</text>
+  </g>
+  <g>
+    <rect x="428" y="492" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="428" y="492" width="4" height="80" fill="#FB923C"/>
+    <text x="454" y="524" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">object-storage.md</text>
+    <text x="454" y="548" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">Presigned uploads, allowlist, lifecycle sweep</text>
+    <rect x="682" y="521" width="78" height="21" rx="10.5" fill="#231C33" stroke="#4B3F6B"/>
+    <text x="721" y="536" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#B9A9E8">if needed</text>
+  </g>
+  <g>
+    <rect x="800" y="492" width="348" height="80" rx="11" fill="#14203A" stroke="#263756"/>
+    <rect x="800" y="492" width="4" height="80" fill="#A78BFA"/>
+    <text x="826" y="524" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E7EFFA">vector-database.md</text>
+    <text x="826" y="548" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#8498B7">pgvector, chunking, HNSW, hybrid search</text>
+    <rect x="1054" y="521" width="78" height="21" rx="10.5" fill="#231C33" stroke="#4B3F6B"/>
+    <text x="1093" y="536" text-anchor="middle" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#B9A9E8">if needed</text>
+  </g>
+  <g font-family="system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <rect x="56" y="600" width="1088" height="64" rx="12" fill="#0F1B30" stroke="#2A3C5E"/>
+    <rect x="56" y="600" width="4" height="64" rx="2" fill="#38BDF8"/>
+    <text x="84" y="628" font-size="14.5" font-weight="600" fill="#DCE7F5">Every later Claude Code session loads these before it touches data, API or infra.</text>
+    <text x="84" y="650" font-size="12.5" fill="#8498B7">Change a decision and the rule file changes in the same commit, so the design never drifts from the code.</text>
+  </g>
+</svg>

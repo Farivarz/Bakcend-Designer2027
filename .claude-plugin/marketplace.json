@@ -1,0 +1,15 @@
+{
+  "name": "farivarz-skills",
+  "description": "Claude Code skills by Farivarz.",
+  "owner": {
+    "name": "Farivarz",
+    "url": "https://github.com/Farivarz"
+  },
+  "plugins": [
+    {
+      "name": "backend-designer",
+      "source": "./",
+      "description": "Design a secure, optimized backend and database from an existing codebase, written as rule files Claude Code follows during development."
+    }
+  ]
+}

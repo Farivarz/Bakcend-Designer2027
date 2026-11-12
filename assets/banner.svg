@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Backend Designer - a Claude Code skill that designs your backend as rule files">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C"/>
+      <stop offset="1" stop-color="#111C33"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.8" cy="0.1" r="0.8">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.02" cy="1" r="0.7">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#8EC5FF"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1C2840" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)" opacity="0.5"/>
+  <rect width="1200" height="360" fill="url(#glowA)"/>
+  <rect width="1200" height="360" fill="url(#glowB)"/>
+  <rect x="0" y="0" width="1200" height="3" fill="#38BDF8" opacity="0.55"/>
+
+  <g font-family="system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <text x="72" y="100" font-size="13" font-weight="600" letter-spacing="3.4" fill="#7DD3FC">CLAUDE CODE SKILL</text>
+    <text x="72" y="172" font-size="56" font-weight="700" fill="url(#titleFill)">Backend Designer</text>
+    <text x="72" y="216" font-size="19" fill="#A9BDD8">Point it at a codebase. It designs the entire backend</text>
+    <text x="72" y="242" font-size="19" fill="#A9BDD8">and writes it as rules your next session has to follow.</text>
+
+    <g font-size="13" font-weight="600">
+      <rect x="72" y="274" width="178" height="32" rx="16" fill="#132038" stroke="#2A3B5C"/>
+      <text x="90" y="295" fill="#9CC9F0">9 separated rule files</text>
+      <rect x="262" y="274" width="222" height="32" rx="16" fill="#132038" stroke="#2A3B5C"/>
+      <text x="280" y="295" fill="#86E2B8">Postgres - Redis - pgvector</text>
+      <rect x="496" y="274" width="150" height="32" rx="16" fill="#132038" stroke="#2A3B5C"/>
+      <text x="514" y="295" fill="#F5CC7A">Docker - Coolify</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="716" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#64799A">.claude/rules/backend/</text>
+
+    <g>
+      <rect x="716" y="62" width="412" height="36" rx="9" fill="#14203A" stroke="#263756"/>
+      <rect x="716" y="62" width="4" height="36" fill="#38BDF8"/>
+      <text x="742" y="85" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E3ECF8">00-overview.md</text>
+      <text x="1110" y="85" text-anchor="end" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6F85A6">decision matrix</text>
+    </g>
+    <g>
+      <rect x="716" y="106" width="412" height="36" rx="9" fill="#14203A" stroke="#263756"/>
+      <rect x="716" y="106" width="4" height="36" fill="#60A5FA"/>
+      <text x="742" y="129" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E3ECF8">api-map.md</text>
+      <text x="1110" y="129" text-anchor="end" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6F85A6">routes - auth - errors</text>
+    </g>
+    <g>
+      <rect x="716" y="150" width="412" height="36" rx="9" fill="#14203A" stroke="#263756"/>
+      <rect x="716" y="150" width="4" height="36" fill="#34D399"/>
+      <text x="742" y="173" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E3ECF8">database-schema.md</text>
+      <text x="1110" y="173" text-anchor="end" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6F85A6">tables - indexes - migrations</text>
+    </g>
+    <g>
+      <rect x="716" y="194" width="412" height="36" rx="9" fill="#14203A" stroke="#263756"/>
+      <rect x="716" y="194" width="4" height="36" fill="#FB7185"/>
+      <text x="742" y="217" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E3ECF8">cache-redis.md</text>
+      <text x="1110" y="217" text-anchor="end" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6F85A6">keys - TTL - fallback</text>
+    </g>
+    <g>
+      <rect x="716" y="238" width="412" height="36" rx="9" fill="#14203A" stroke="#263756"/>
+      <rect x="716" y="238" width="4" height="36" fill="#A78BFA"/>
+      <text x="742" y="261" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E3ECF8">vector-database.md</text>
+      <text x="1110" y="261" text-anchor="end" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6F85A6">pgvector - HNSW</text>
+    </g>
+    <g>
+      <rect x="716" y="282" width="412" height="36" rx="9" fill="#14203A" stroke="#263756"/>
+      <rect x="716" y="282" width="4" height="36" fill="#FBBF24"/>
+      <text x="742" y="305" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#E3ECF8">deploy.md</text>
+      <text x="1110" y="305" text-anchor="end" font-family="system-ui, Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6F85A6">compose - Coolify - CI</text>
+    </g>
+  </g>
+</svg>

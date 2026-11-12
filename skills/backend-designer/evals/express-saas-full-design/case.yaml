@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: express-saas-full-design
+expected_outcome: |
+  Writes one rule file per concern under .claude/rules/backend/ (overview, api-map,
+  database-schema, security, cache-redis, load-management, object-storage,
+  vector-database, deploy), chooses pgvector in Postgres for embeddings, documents
+  a Coolify deploy, scopes files with paths frontmatter, and adds a pointer to CLAUDE.md.
